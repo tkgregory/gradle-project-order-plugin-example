@@ -1,0 +1,5 @@
+rootProject.name = 'project-order-plugin-test'
+
+include '1-networking-resources'
+include '2-security-resources'
+include '3-compute-resources'

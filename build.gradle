@@ -1,0 +1,22 @@
+plugins {
+    id 'com.tomgregory.project-order' version '1.0.0'
+}
+
+group 'com.tomgregory'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    task deploy() {
+        doLast {
+            println "Deploying from $project.name"
+        }
+    }
+}
+
+projectOrder {
+    taskNames = ['deploy']
+}
